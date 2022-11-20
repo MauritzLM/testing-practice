@@ -1,0 +1,40 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "ansi-styles": "^4.3.0",
+    "buffer-from": "^1.1.2",
+    "callsites": "^3.1.0",
+    "camelcase": "^5.3.1",
+    "caniuse-lite": "^1.0.30001431",
+    "ci-info": "^3.6.1",
+    "char-regex": "^1.0.2",
+    "cjs-module-lexer": "^1.2.2",
+    "co": "^4.6.0",
+    "collect-v8-coverage": "^1.0.1",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "concat-map": "^0.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauritzLM/testing-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauritzLM/testing-practice/issues"
+  },
+  "homepage": "https://github.com/MauritzLM/testing-practice#readme"
+}
