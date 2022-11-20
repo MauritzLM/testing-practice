@@ -1,6 +1,6 @@
 
-const { default: test } = require("node:test");
+const reverseString = require("../scripts/reverseString.js");
 
 test('reverse string', () => {
-    expect(reverseString(eno)).toBe(one);
+    expect(reverseString('om si eman ym')).toBe('my name is mo');
 })

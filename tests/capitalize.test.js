@@ -1,5 +1,5 @@
-const { default: test } = require("node:test")
+const capitalize = require("../scripts/capitalize.js")
 
 test('capitalize string', () => {
-    expect(capitalize(hello).toBe(Hello));
-})
+    expect(capitalize('hellO')).toBe('Hello');
+});
