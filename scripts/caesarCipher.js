@@ -36,8 +36,6 @@ function shift(string, amount) {
             newStr += string[i];
         }
 
-
-
     }
 
     return newStr;
