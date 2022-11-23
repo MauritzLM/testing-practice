@@ -1,44 +1,34 @@
-function shift(string, amount) {
+function caesarCipher(string, amount) {
     let newStr = '';
     for (let i = 0; i < string.length; i++) {
-        // get charcode of sting[i];
-        let num = string[i].charCodeAt(0);
-        let newNum = num + amount;
+        // get charcode of string[i]
+        let charcode = string[i].charCodeAt(0);
 
-        // uppercase
-        if (num >= 65 && num <= 90) {
-            if (newNum < 65) {
-                newStr += String.fromCharCode(newNum + 26);
-            }
+        // convert to lowercase
+        let lowerCase = string[i].toLowerCase();
+        // code of lower case
+        let lowerCaseCode = lowerCase.charCodeAt(0);
 
-            else if (newNum > 90) {
-                newStr += String.fromCharCode(newNum - 26);
-            }
-            else {
-                newStr += String.fromCharCode(newNum);
-            }
+        // get new letter
+        let newLetter = String.fromCharCode(((lowerCaseCode - 97 + amount) % 26) + 97);
+
+        // if uppercase
+        if (charcode >= 65 && charcode <= 90) {
+            newStr += newLetter.toUpperCase();
         }
 
-        // lower case
-        else if (num >= 97 && num <= 122) {
-            if (newNum < 97) {
-                newStr += String.fromCharCode(newNum + 26);
-            }
-            else if (newNum > 122) {
-                newStr += String.fromCharCode(newNum - 26);
-            }
-            else {
-                newStr += String.fromCharCode(newNum);
-            }
+        // if lowercase
+        else if (charcode >= 97 && charcode <= 122) {
+            newStr += newLetter
         }
-        // keep punctuation
+
+        // punctuation
         else {
             newStr += string[i];
         }
-
     }
 
     return newStr;
 }
 
-module.exports = shift;
+module.exports = caesarCipher;

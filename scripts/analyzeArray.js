@@ -8,6 +8,7 @@ function analyzeArray(array) {
     }
 }
 
+// helper functions
 const getMax = (a, b) => {
     return Math.max(a, b)
 }
